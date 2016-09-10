@@ -55,6 +55,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        if ( editText1.getText().toString().length() <= 0 )
+        {
+            return;
+        }
+        if( editText2.getText().toString().length() <= 0 )
+        {
+            return;
+        }
 
         if (v.getId() == R.id.button1) {
           //  editText1.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
